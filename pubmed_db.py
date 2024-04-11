@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 @app.route('/search_pubmed')
 def search_pubmed():
+    print("Shelly")
     url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
     params = {
         'db': 'pubmed',
